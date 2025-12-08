@@ -1,0 +1,11 @@
+@use 'variables';
+
+@mixin border-style ($color: variables.$primary-color) {
+  border: 3px solid $color;
+  background-color: variables.$accent-color;
+  margin: 20px;
+  padding: 5px;
+  -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+      border-radius: 15px;
+}
