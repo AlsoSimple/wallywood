@@ -1,0 +1,49 @@
+{
+  "name": "wallywood",
+  "version": "1.0.0",
+  "description": "Template for a new project",
+  "homepage": "https://github.com/AlsoSimple/wallywood#readme",
+  "bugs": {
+    "url": "https://github.com/AlsoSimple/wallywood/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlsoSimple/wallywood.git"
+  },
+  "license": "MIT",
+  "author": "AlsoSimple",
+  "main": "dist/server.js",
+  "scripts": {
+    
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:seed": "tsx prisma/seed.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.10.1",
+    "prisma": "^6.19.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

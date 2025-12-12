@@ -1,0 +1,6 @@
+xnode_modules/
+.DS_Store
+*.log
+.env
+
+/generated/prisma
